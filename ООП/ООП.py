@@ -37,7 +37,8 @@ cool_mentor.rate_hw(best_student, 'Python', 10)
 print(best_student.grades)
 
 class Lecturer(Mentor):
-    pass
+    def __init__(self):
+        self.grades_lecturer = {}
 
 class Reviewer(Mentor):
     def rate_hw(self, student, course, grade):
