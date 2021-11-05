@@ -37,10 +37,16 @@ cool_mentor.rate_hw(best_student, 'Python', 10)
 print(best_student.grades)
 
 class Lecturer(Mentor):
-    def add_grades (self):
+    def __init__(self, name, surname):
+        self.courses_attached = []
+        super().__init__(self, name)
         self.grades_lecturer = {}
 
 class Reviewer(Mentor):
+    def __init__(self, name, surname):
+        self.courses_attached = []
+        super().__init__(self, name)
+
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
             if course in student.grades:
