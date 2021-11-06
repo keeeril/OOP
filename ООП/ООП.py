@@ -113,6 +113,6 @@ print(lector_1)
 print(lector_2)
 
 # student = [student_1, student_2]
-#
+# не понимаю как реализовать тут функцию.
 # def aver_grade_course(student, course):
 
